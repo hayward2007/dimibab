@@ -1,0 +1,109 @@
+.main {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100vh;
+    width: calc(100vw - 64px);
+    max-height: 900px;
+    max-width: 1468px;
+
+    color: white;
+    gap: 16px;
+}
+
+.title {
+    display: flex;
+    flex-grow: 1;  
+    font-family: 'SUITE';
+    font-size: 22px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    user-select: none;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    border: rgba(255, 255, 255, 0.1) 3px solid;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    width: 56px;
+    height: 56px;
+    border-radius: 25%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.2));
+}
+
+.menu {
+    flex: 1 1 0px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    user-select: none;
+    gap: 16px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 32px;
+    font-weight: 700;
+    height: 32px;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.dish div {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    gap: 8px;
+}
+
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    /* background-color: black; */
+}

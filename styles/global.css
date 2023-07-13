@@ -1,0 +1,48 @@
+@import url("http://fonts.2w.vc/suite/static/font.css");
+
+* {
+padding: 0px;
+margin: 0px;
+text-align: center;
+font-family: 'SUIT';
+overscroll-behavior: none;
+-ms-overflow-style: none; /* 인터넷 익스플로러 */
+scrollbar-width: none; /* 파이어폭스 */
+font-family: 'SUIT';
+
+::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라 브라우저 */
+}
+}
+
+div {
+position: relative;
+}
+
+.column {
+display: flex;
+flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 16px;
+}
+
+.center {
+justify-content: center;
+align-items: center;
+}
+
+.start {
+justify-content: center;
+align-items: start;
+}
+
+.end {
+justify-content: center;
+align-items: end;
+}
